@@ -11,10 +11,6 @@
     color: var(--titleTextColor);
 }
 
-.bar{
-    width: 100px;
-    height: 50px;
-}
 .nav-links{
     gap: 20px;
 }
@@ -79,6 +75,11 @@
     .navbar{
         padding: 1.6rem 2rem;
         border-bottom: 1px solid var(--navBorder);
+    }
+    .hero{
+        width: 100%;
+        height: 60vh;
+        overflow: hidden;
     }
     .nav-links{
         display: none;
