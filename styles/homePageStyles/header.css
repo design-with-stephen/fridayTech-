@@ -77,9 +77,9 @@
         border-bottom: 1px solid var(--navBorder);
     }
     .hero{
-        width: 100%;
         height: 60vh;
-        overflow: hidden;
+        background: #131313;
+        
     }
     .nav-links{
         display: none;
