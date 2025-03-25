@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact Page</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="navbar">
+                <ul>
+                    <li class="logo"><strong>FridayTech</strong></li>
+                </ul>
+                <ul class="nav-links-wrap">
+                    <ul class="nav-links">
+                        <li class="nav-link"><a href="/index.html">Home</a></li>
+                        <li class="nav-link"><a href="/pages/aboutPage.html">About</a></li>
+                        <li class="nav-link"><a href="/pages/servicesPage.html">Service</a></li>
+                        <li class="nav-link"><a href="/pages/projectsPage.html">Projects</a></li>
+                        <li class="nav-link"><a href="/pages/contactPage.html">Contact</a></li>
+                    </ul>
+                    <ul class="menuBars-wrap">
+                        <i class="fa-solid fa-bars-staggered" id="menu-icon"></i>
+                    </ul>
+                </ul>
+                
+            </nav>
+            <nav class="navbar-mobile">
+                <ul>
+                    <li class="logo"><strong>FridayTech</strong></li>
+                </ul>
+                <ul>
+                    <ul class="mobile-nav-links">
+                        <li class="mobile-nav-link"><a href="/index.html">Home</a></li>
+                        <li class="mobile-nav-link"><a href="/pages/aboutPage.html">About</a></li>
+                        <li class="mobile-nav-link"><a href="/pages/servicesPage.html">Service</a></li>
+                        <li class="mobile-nav-link"><a href="/pages/projectsPage.html">Projects</a></li>
+                        <li class="mobile-nav-link"><a href="/pages/contactPage.html">Contact</a></li>
+                    </ul>
+                </ul>
+                
+            </nav>
+            <!-- end of navbar -->
+        </header>
+        <!-- end of header section -->
+         <section class="hero">
+            <!-- hero content start -->
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h1>Have a Project At hand, Contact Us!</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, 
+                        aliquid eos rem autem consectetur consequuntur sapiente ducimus 
+                        accusantium aut doloribus magnam iusto impedit ratione natus 
+                        delectus, nihil ex quis nesciunt.
+                    </p>
+                    <button class="ctn">
+                        <a href="#contact-section"><span>Reach Out to Us</span></a>
+                    </button>
+                </div>
+            </div>
+         </section>
+        <main>
+            <!-- start of contact section -->
+            <section id="contact-section" class="contact-section section">
+                <div class="section-info">
+                    <h2 class="sectionTitle titleColor">Reach Out To us</h2>
+                    <!-- tagline -->
+                     <p>Get in touch with us to learn more about our services and how we can help
+                        your business grow.</p>
+
+                </div>
+                <div class="contact-wrap">
+                    <div class="left-wrapper">
+                        <div class="left-wrapper-content">
+                            <h2 class="FormTitle titleColor">Get in Touch</h2>
+                            <p>
+                                We'd love to hear from you. Whether you have a
+                                question, a project in mind, or just want to say hello, we're here to help
+                            </p>
+                        </div>
+                        <div class="mapArea" id="map"></div>
+                        <div class="contact-info">
+                            <div>
+                                <h5>Head Office</h5>
+                                <p>123 Main St, Anytown, USA 12345</p>
+                                <div>
+                                    <h5>Email us</h5>
+                                    <p>
+                                        <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="verticleLine">
+                            <div>
+                                <h5>Call Us</h5>
+                                <p>
+                                    <a href="tel:123-456-7890">
+                                        <i class="fas fa-phone"></i>123-456-7890
+                                    </a>
+                                </p>
+                                <!-- whatsapp number -->
+                                 <p>
+                                    <a href="https://api.whatsapp.com/send?phone=1234567890">
+                                        <i class="fab fa-whatsapp"></i>123-456-7890
+                                    </a>
+                                 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-wrapper">
+                        <form class="contact-form" id="contact-form">
+                            <div class="inputControl">
+                                <label for="" class="label">First Name</label>
+                                <input type="text" class="name-field" placeholder="enter your first name">
+                            </div>
+                            <div class="inputControl">
+                                <label for="" class="label">Last Name</label>
+                                <input type="text" class="name-field" placeholder="enter your last name">
+                            </div>
+                            <div class="inputControl">
+                                <label for="" class="label">Email</label>
+                                <input type="email" class="email-field" placeholder="enter your email address">
+                            </div>
+                            <div class="inputControl">
+                                <label for="" class="label">Phone</label>
+                                <div class="field-group">
+                                    <select name="" id="">
+                                        <option value="">Country</option>
+                                        <option value="">+256</option>
+                                        <option value="">+211</option>
+                                        <option value="">+256</option>
+                                    </select>
+                                    <input type="tel" class="phone-field" placeholder="Enter your Phone Number">
+                                </div>
+                            </div>
+                            <div class="inputControl">
+                                <label for="Message"></label>
+                                <textarea name="" id="" placeholder="Type your Message here"></textarea>
+                            </div>
+                            <button class="formBtn hoveredBtn">
+                                <!-- icon -->
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- end of contact section -->
+        </main>
+        <!-- footer section start -->
+        <footer id="footer" class="footer section"></footer>
+        <!-- footer section end -->
+    </div>
+    <script src="/scripts/footerScript.js"></script>
+    <script src="/scripts/faq.js"></script>
+    <script src="/components/nav.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.runningText{
+    width: 80%;
+    margin: 0 auto;
+}
+/* marquee{
+    color: #fff;
+    background-color: red;
+    padding: 4rem;
+} */
+ .services-cards{
+    margin-top: 2rem;
+ }
+
+ @media screen and (max-width: 480px){
+    #services-section .section-wrapper .sectionTitle{
+        text-align: center;
+    }
+    #services-section .section-wrapper p{
+        text-align: center;
+    }
+}

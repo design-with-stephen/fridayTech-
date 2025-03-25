@@ -1,0 +1,347 @@
+:root{
+    /* global colors */
+    --background-color: linear-gradient(45deg, rgba(0, 0, 0, 0.507) 5%, #00010886 90%);
+    --background-color2: linear-gradient(45deg, rgba(0, 0, 0, 0.479) 5%, #000108 90%);
+    --navBorder: rgba(241, 241, 241, 0.144);
+    --paragraphText-color:#ccc;
+    --borderColor:#35353541;
+    --titleTextColor: #d4d4d4;
+    --labelColor:#ccc;
+    --cardTitleColor: #e9bf05;
+    --greenColor:#09e414;
+    --mainColor: #09e414;
+    --lineColor: rgba(179, 179, 179, 0.164);
+    --buttonColor: #01cf0b;
+    --buttonBorderColor: #01cf0b;
+    --neutral: #fff;
+    --subTitleColor: #9b9b9b;
+    --white:#fff;
+    --colorWhite:#eeeeee;
+
+    /* links color */
+    --footerLinksColor: rgba(216, 216, 216, 0.795);
+    --linksHovered: #09e414;
+    
+    /* Border global styles */
+    --border-Color: #35353541;
+    --inputBorderColor:#13131348;
+    
+    /* focus global color styles */
+    --focusColor:#8d6d03;
+
+    /* button Hover colors */
+    --buttonHoverColor: #02a50a;
+    --buttonHovered:rgb(1, 128, 1);
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'poppins';
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.5) 5%, #000108 90%);
+
+
+    /* Glass effect */
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    background-color: rgba(0, 0, 0, 0.541); 
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37); 
+    position: relative; 
+}
+
+.loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display: none; /* Hidden by default */
+}
+
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/* Glow effect */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, 
+        rgba(0, 0, 0, 0.671) 0%,  
+        rgba(0, 1, 3, 0.925) 40%,        
+        transparent 80%                    
+    );
+    filter: blur(100px); 
+    z-index: -2;
+
+    .container{
+        background: green;
+    }
+}
+
+
+button{
+    cursor: pointer;
+    
+}
+.hoveredBtn:hover{
+    background-color: var(--buttonHovered);
+    transition: 0.6s ease all;
+}
+.section {
+    padding: 6rem;
+    /* height: fit-content; */
+}
+.main-padding {
+    padding: 1.2rem;
+}
+h2{
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--colorWhite);
+}
+.txt-center{
+    text-align: center;
+}
+.p-width{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flexWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.d-flex{
+    display: flex;
+    gap: 5px;
+}
+.gap{
+    gap: 20px;
+}
+
+.marginTop{
+    margin-top: 2rem;
+}
+
+.marginBottom{
+    margin-top: 2rem;
+}
+/* display grid with two columns */
+.d-grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 2%;
+}
+.font-w-500{
+    font-weight: 500;
+}
+.viewBtn{
+    cursor: pointer;
+    color: var(--paragraphText-color);
+}
+.viewBtn span a{
+    cursor: pointer;
+    color: var(--paragraphText-color);
+}
+
+.font-w-400{
+    font-weight: 400;
+}
+.font-w-300{
+    font-weight: 300;
+}
+.spanTwo-col{
+    grid-column: span 2;
+}
+.colorWhite{
+    color: var(--colorWhite);
+}
+.section p{
+    font-size: 0.9rem;
+    color: var(--paragraphText-color);
+}
+
+.sectionTitle{
+    font-size: 2.0rem;
+    font-weight: 400;
+}
+.section .subtext{
+    width: 100%;
+    font-size: 0.9rem;
+    color:var(--subTitleColor) ;
+}
+.bordered{
+    width: fit-content;
+    padding: 4px;
+    border-bottom: 1px solid var(--border-Color);
+    /* border-radius: 10px; */
+    font-size: 0.8rem;
+    color: #6b6b6b;
+}
+.borderedBtn{
+    border: 1px solid var(--buttonBorderColor);
+    background-color: transparent;
+    color: var(--mainColor);
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 2.4rem;
+    cursor: pointer;
+}
+.fas,.fab{
+    margin-right: 10px;
+}
+.card-border{
+    border: 1px solid var(--border-Color);
+    padding: 10px;
+    border-radius: 10px;
+}
+.ctn {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    border: 2px solid var(--buttonBorderColor);
+    margin-top: 1.6rem;
+    border-radius: 5px;
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+    font-weight: bold;
+    color: var(--mainColor);
+    cursor: pointer;
+    transition: width 0.5s ease-in, border 0.5s ease-in, color 0.5s ease-in;
+}
+.ctn:hover span a{
+    color: var(--neutral);
+}
+.ctn:hover{
+    color: var(--white);
+}
+.ctn::before {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    z-index: -3;
+    transition: width 0.5s ease-in, background-color 0.5s ease-in, color 0.5s ease-in;
+}
+
+.ctn:hover::before {
+    width: 100%;
+    background-color:var(--buttonColor);
+}
+.cardFloatingPara{
+    font-size: 0.8rem;
+    text-align: left;
+    font-weight: 300;
+}
+.cardFloatingTitle{
+    font-size: 0.9rem;
+    text-align: left;
+    font-weight: 300;
+}
+.fontSize-lg{
+    font-size: 2.4rem;
+    color: var(--mainColor);
+}
+
+
+.titleColor{
+    color: var(--titleTextColor);
+}
+.cardBorder{
+    border: 1px solid var(--border-Color);
+}
+.cardTitleColor{
+    color: var(--cardTitleColor);
+}
+input,select,textarea{
+    background: transparent;
+    border: 1px solid var(--inputBorderColor);
+    color: var(--paragraphText-color);
+}
+.label{
+    color: var(--labelColor);
+}
+button a{
+    color: #01cf0b;
+}
+.wrapper{
+    margin-top: 30px;
+}
+.centerBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+@media screen and (max-width:480px){
+    .section{
+        padding:4rem 1.2rem;
+    }
+    .section h2{
+        font-size: 1.4rem;
+        
+        margin: 20px 0;
+    }
+    .section p{
+        font-size: 0.8rem;
+        /* add line height */
+        line-height: 1.5rem;
+    }
+    .spanTwo-col{
+        grid-column: span 1;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:600px){
+    .section{
+        padding:4rem 1.2rem;
+    }
+    .section h2{
+        font-size: 1.4rem;
+        margin: 20px 0;
+    }
+    .section p{
+        font-size: 0.8rem;
+        /* add line height */
+        line-height: 1.5rem;
+    }
+    .spanTwo-col{
+        grid-column: span 1;
+    }
+}

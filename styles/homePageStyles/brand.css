@@ -1,0 +1,28 @@
+.brand-wrapper{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.brand-wrapper h2{
+    font-weight: 400;
+}
+.brand-wrapper h2 strong{
+    color: #09e414;
+}
+@media screen and (max-width:480px){
+    .brand{
+        background: var(--background-color2);
+    }
+    .brand-wrapper{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .brand-wrapper h2{
+        font-size: 0.9rem;
+    }
+    .brand-wrapper p{
+        width: 100%;
+    }
+    
+}

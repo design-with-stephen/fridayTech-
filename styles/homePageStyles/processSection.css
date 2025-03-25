@@ -1,0 +1,99 @@
+
+.process-container{
+    width: 100%;
+    height: fit-content;
+    height: fit-content;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+    padding: 20px 0;
+}
+
+.processHeadingInfo h2, 
+.processHeadingInfo h3,
+.processHeadingInfo p{
+    margin-bottom: 0.5%;
+}
+.process-title{
+    font-size: 1.5rem;
+}
+.process-step-content .process-step-parag{
+    font-size: 0.8rem;
+}
+.process-steps{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2%;
+    margin-top: 2%;
+    
+}
+
+.process-step{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.048);
+}
+.process-step-icon{
+    display: flex;
+    gap: 2%;
+    align-items: center;
+}
+.process-step-icon i{
+    color: #9494947a;
+}
+.process-step-icon h4{
+    color: #e4c309;
+}
+.img-wrap{
+    /* background: red; */
+    width: 100%;
+    height: 100%;
+}
+.img-wrap img{
+    object-fit: fill;
+    width: 100%;
+    height: 400px;
+}
+.btnWrapper{
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width:480px){
+    .process-container{
+        overflow: visible;
+        grid-template-columns: 1fr;
+        height: fit-content;
+        padding: 0;
+    }
+    
+    
+    .processHeadingInfo h2, 
+    .processHeadingInfo h3,
+    .processHeadingInfo p{
+        margin-bottom: 10%;
+    }
+    .process-title{
+        font-size: 1.5rem;
+    }
+    .process-step-content .process-step-parag{
+        font-size: 0.8rem;
+    }
+    .process-steps{
+        grid-template-columns: 1fr;
+        margin-bottom: 5%;
+    }
+    
+    .process-step{
+        padding: 10px;
+    }
+    .process-step-icon h4{
+        font-size: 0.9rem;
+    }
+    .img-wrap img{
+        height: 200px;
+    }
+    
+}
