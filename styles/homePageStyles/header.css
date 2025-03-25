@@ -77,9 +77,10 @@
         border-bottom: 1px solid var(--navBorder);
     }
     .hero{
-        height: 60vh;
-        background: #131313;
-        
+        height: fit-content;
+        padding: 2.5rem 0 2.5rem 0;
+        background: #030303;
+
     }
     .nav-links{
         display: none;
