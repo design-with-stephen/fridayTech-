@@ -1,0 +1,25 @@
+/* Import external styles */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+@import url("https://unpkg.com/leaflet@1.9.3/dist/leaflet.css");
+
+/* Landing Page main styles */
+@import url("../styles/homePageStyles/header.css");
+@import url("../styles/homePageStyles/aboutUs.css");
+@import url("../styles/homePageStyles/services.css");
+@import url("../styles/homePageStyles/brand.css");
+@import url("../styles/homePageStyles/bannerSection.css");
+@import url("../styles/homePageStyles/processSection.css");
+@import url("../styles/homePageStyles/reasons-section.css");
+@import url("../styles/homePageStyles/testimonials.css");
+@import url("../styles/homePageStyles/contact.css");
+@import url("../styles/homePageStyles/faqStyles.css");
+@import url("../styles/homePageStyles/footer.css");
+
+/* aboutPage css links */
+
+@import url('../styles/aboutPageStyles/aboutPage.css');
+@import url('../styles/servicesPageStyles/servicesPage.css');
+
+@import url('../styles/navbar-mobile.css');
+/* util styles */
+@import url("../utils.css");
