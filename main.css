@@ -21,6 +21,6 @@
 @import url('./styles/aboutPageStyles/aboutPage.css');
 @import url('./styles/servicesPageStyles/servicesPage.css');
 
-@import url('/styles/navbar-mobile.css');
+@import url('./styles/navbar-mobile.css');
 /* util styles */
 @import url("utils.css");
